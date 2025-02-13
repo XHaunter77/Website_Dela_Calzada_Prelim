@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <style>
+        html, body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+}
+
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+    color: #00ffea;
+}
+
+
+.header {
+    background: #111133;
+    color: #00ffea;
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px #00ffea;
+}
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: #080822;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #00ffea;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    background: #121254;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background: #232378;
+}
+
+.content {
+            margin-left: 220px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% - 220px);
+        }
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-section img {
+    width: 150px;
+    margin-right: 20px;
+    border: 2px solid #00ffea;
+    box-shadow: 0px 0px 10px #00ffea;
+}
+
+
+.footer {
+    background: #121254;
+    color: #00ffea;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #00ffea;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #00ffea;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #121254;
+    color: white;
+}
+
+td {
+    background-color: #080822;
+}
+
+tr:hover {
+    background-color: #232378;
+}
+    </style>
+</head>
+<body>
+    <div class="header">EJ Lloyd A. Dela Calzada</div>
+
+    <div class="sidebar">
+        <a href="index_home.html">About Me</a>
+        <a href="subjects.html">Subjects Taken</a>
+        <a href="enrolled.html">Enrolled</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="favorites.html">My Favorites</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div class="content">
+        <h2>About ME</h2>
+        <div class="about-section">
+            <img src="prp.jpg" alt="Profile Picture">
+            <p>
+                Good day! Thank you for visiting my website.<br>
+                I am EJ Lloyd Arsua Dela Calzada, 20 years old.<br>
+                I currently live on P-5 Circumferential Road, Aguada, Ozamiz City, Misamis Occidental.<br>
+                I study at Misamis University, and I am currently in my second year of BSIT.<br>
+                My hobbies are playing online games, watching anime, and reading manhwa, manhua, and manga.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">&copy; 2023 - 2024 ITP4 | All Rights Reserved</div>
+</body>
+</html>

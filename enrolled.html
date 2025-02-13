@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #00ffea;
+        }
+
+        .header {
+            background: #111133;
+            color: #00ffea;
+            text-align: left;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0px 0px 15px #00ffea;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #080822;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #00ffea;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: center;
+            background: #121254;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background: #232378;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% - 220px);
+        }
+
+        .table-container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    margin-top: -20px; /* Moves the table closer */
+}
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #00ffea;
+            padding: 10px;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        th {
+            background-color: #121254;
+            color: white;
+        }
+
+        td {
+            background-color: #080822;
+        }
+
+        tr:hover {
+            background-color: #232378;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #00ffea;
+            background-color: #121254;
+            color: #00ffea;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #232378;
+        }
+
+        .pagination a.active {
+            background-color: #00ffea;
+            color: black;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: #121254;
+            color: #00ffea;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px #00ffea;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">EJ Lloyd A. Dela Calzada</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index_home.html">About ME</a>
+            <a href="subjects.html">Subjects Taken</a>
+            <a href="enrolled.html">Enrolled</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="favorites.html">My Favorites</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="content">
+            <h2>Enrolled Subjects</h2>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Schedule</th>
+                        <th>Subject Name</th>
+                        <th>Description</th>
+                        <th>Units</th>
+                    </tr>
+                    <tr><td>TTH-03050405P-HF306<br>TTH-04100540P-HF304</td><td>CSIT 5</td><td>INFORMATION MANAGEMENT</td><td>3.0</td></tr>
+                    <tr><td>MW-04100510P-HF307<br>TTH-11101240N-HF204</td><td>ITP 4</td><td>INTEGRATIVE PROGRAMMING & TECHNOLOGIES 1</td><td>3.0</td></tr>
+                    <tr><td>MW-09351035A-HF307<br>MW-08000930A-HF202</td><td>ITP 5</td><td>NETWORKING 2 (CISCO 2: ROUTING PROTOCOLS & CONCEPTS)</td><td>3.0</td></tr>
+                    <tr><td>MW-11101210N-HF305<br>MW-01000230P-HF204</td><td>ITP 6</td><td>INTRODUCTION TO HUMAN COMPUTER INTERACTION</td><td>3.0</td></tr>
+                    <tr><td>F-08001100A-SA103</td><td>PHILO 1</td><td>ETHICS</td><td>3.0</td></tr>
+                    <tr><td>MW-02350405P-A205</td><td>COM 1</td><td>PURPOSIVE COMMUNICATION</td><td>3.0</td></tr>
+                    <tr><td>F-06000800A-CCRT</td><td>PE 4</td><td>PATH FIT 4: SPORTS (TEAM)</td><td>2.0</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2023 - 2024 ITP4 | All Rights Reserved</div>
+</body>
+</html>
